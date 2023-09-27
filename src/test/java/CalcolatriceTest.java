@@ -21,4 +21,14 @@ public class CalcolatriceTest {
     public void testMoltiplicazione(){
         assertTrue("moltiplicazione coretta" , calcolatrice.moltiplicazione(10 , 2) == 20);
     }
+
+    @Test
+    public void testSottrazione(){
+        assertTrue("sottrazione corretta" , calcolatrice.sottrazione(10 , 2) == 8);
+    }
+
+    @Test
+    public void testDivisione(){
+        assertTrue("divisione corretta" , calcolatrice.divisione(8  , 0) == 0);
+    }
 }
